@@ -9,9 +9,6 @@ p{
 }
 
 
-
-
-
 .dark-model label{
     display: flex;
     align-items: center;
@@ -20,7 +17,7 @@ p{
 .dark-model{
     display: flex;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .dark-model button{

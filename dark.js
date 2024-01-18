@@ -1,5 +1,6 @@
 const btnDarkMode = document.querySelector("#btn-dark-mode-toggle")
 const themeSystem = localStorage.getItem("themeSystem") || 'light'
+const modoDark = document.querySelector("#modoDark")
 
 btnDarkMode.addEventListener('click', () => {
     let oldTheme = localStorage.getItem('themeSystem') || 'light'
@@ -15,9 +16,12 @@ function defineCurrentTheme(theme){
     if(theme == "light")
     {
         btnDarkMode.innerHTML = darkSvg
+        modoDark.innerHTML = "Modo dark"
         return
+    }else if(theme == "dark"){
+        btnDarkMode.innerHTML = lightSvg
+        modoDark.innerHTML = "Modo Light"
     }
-    btnDarkMode.innerHTML = lightSvg
 }
 
 defineCurrentTheme(themeSystem)
