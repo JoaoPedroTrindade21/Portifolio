@@ -141,12 +141,20 @@ nav a::after {
 }
 
 #whatsap {
-    border-radius: 50%;
     border: none;
     position: fixed;
-    margin: 90vh 0 0 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 30px;
+    bottom: 30px;
 }
 
+#whatsap i{
+    font-size: 36px;
+    color: var(--dark);
+
+}
 .dois-containers {
     display: flex;
     justify-content: center;
