@@ -22,6 +22,8 @@
 
 .dark-model p{
     font-size: 1.125rem;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 .linkedin, .github{
@@ -146,15 +148,15 @@ nav a::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 30px;
-    bottom: 30px;
+    left: 1rem;
+    bottom: 1rem;
 }
 
-#whatsap i{
-    font-size: 36px;
-    color: var(--dark);
-
+#whatsap img{
+    width: 50px;
+    height: 50px;
 }
+
 .dois-containers {
     display: flex;
     justify-content: center;
@@ -278,13 +280,12 @@ nav a::after {
 
 .scrollTop i{
     font-size: 24px;
-    color: var(--dark);
+    color: var(--white);
 }
 
 .scrollTop {
     border: 1px solid ;
-    border-color: var(--dark);
-    background-color: transparent;
+    background-color: var(--dark);
     width: 50px;
     height: 50px;
     padding: 8px;
@@ -307,10 +308,7 @@ nav a::after {
     visibility: visible;
 }
 
-.scrollTop img {
-    width: 100%;
-    transform: rotate(90deg);
-}
+
 
 
 @media screen and (max-width: 1024px) {
@@ -321,11 +319,6 @@ nav a::after {
 
     nav a {
         font-size: 1.25rem;
-    }
-
-    #whatsap img {
-        width: 50px;
-        height: 50px;
     }
 
     .container {
@@ -417,7 +410,7 @@ nav a::after {
         position: absolute;
         text-align: center;
         top: 0;
-        background-color: #f95f5f;
+        background: linear-gradient(180deg, rgb(255, 85, 85) 0%, rgb(255, 0, 0) 100%);
         height: 100vh;
         width: 100%;
     }
