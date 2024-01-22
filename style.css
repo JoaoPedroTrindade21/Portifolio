@@ -454,6 +454,7 @@ nav a::after {
 
 
     nav.active ul {
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
