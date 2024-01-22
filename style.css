@@ -216,8 +216,9 @@ nav a::after {
 }
 
 .habilidades-ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     gap: 5rem;
     margin-top: 80px;
@@ -284,7 +285,7 @@ nav a::after {
 }
 
 .scrollTop {
-    border: 1px solid ;
+    border: 1px solid var(--dark);
     background-color: var(--dark);
     width: 50px;
     height: 50px;
@@ -309,7 +310,54 @@ nav a::after {
 }
 
 
+.serviços{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:  0 1rem;
+    margin-bottom: 150px;
+    gap: 3rem;
 
+}
+
+.serviços h1{
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    background: linear-gradient(180deg, #F00 0%, rgba(237, 0, 0, 0.50) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.serviços ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.serviços ul li{
+    background: #ff5b5b;
+    width: 350px;
+    height: 240px;
+    padding: 1.875rem;
+    border-radius: 0.25rem;
+}
+
+.serviços ul li i{
+    color: var(--white);
+    font-size: 50px;
+    margin-bottom: 2.5rem;
+}
+
+.serviços p{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
 
 @media screen and (max-width: 1024px) {
 
@@ -391,9 +439,12 @@ nav a::after {
 
     .habilidades-ul {
         gap: 1rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
     }
+
+    .serviços h1{
+        font-size: 2rem;
+    }
+
 
 
 }
@@ -405,8 +456,7 @@ nav a::after {
     nav.active ul {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: 7rem;
+        justify-content: space-around;
         position: absolute;
         text-align: center;
         top: 0;
@@ -558,17 +608,19 @@ nav a::after {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
-@media screen and (max-width: 468px) {
-    .habilidades-ul {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
+@media screen and (max-width: 625px) {
     .javaScript {
         width: 125px;
         height: 125px;
     }
 
+}
+
+@media screen and (max-width: 468px) {
+    .javaScript {
+        width: 125px;
+        height: 125px;
+    }
     nav a {
         font-size: 1.75rem;
         color: white;
@@ -589,5 +641,18 @@ nav a::after {
     nav a {
         font-size: 1.125rem;
         color: white;
+    }
+
+    .serviços ul li{
+        background: #ff5b5b;
+        width: 250px;
+        padding: 1.875rem;
+        border-radius: 0.25rem;
+    }
+}
+
+@media screen and (max-width: 385px){
+    .serviços ul li{
+        width: 250px;
     }
 }
