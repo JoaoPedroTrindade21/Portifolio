@@ -467,7 +467,8 @@ nav a::after {
     nav.active ul {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 3.25rem;
         position: absolute;
         text-align: center;
         top: 0;
