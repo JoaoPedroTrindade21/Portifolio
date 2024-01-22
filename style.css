@@ -468,7 +468,7 @@ nav a::after {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 3.25rem;
+        gap: 5rem;
         position: absolute;
         text-align: center;
         top: 0;
