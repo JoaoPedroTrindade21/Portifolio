@@ -346,6 +346,8 @@ nav a::after {
     height: 240px;
     padding: 1.875rem;
     border-radius: 0.25rem;
+    transition: all 0.5s ease-in-out;
+
 }
 
 .serviços ul li i{
@@ -357,6 +359,15 @@ nav a::after {
 .serviços p{
     font-weight: 400;
     font-size: 1.5rem;
+}
+
+.serviços ul:hover> :not(:hover) {
+    opacity: .4;
+    transform: scale(0.9);
+}
+
+.serviços ul li:hover {
+    transform: scale(1.1);
 }
 
 @media screen and (max-width: 1024px) {
