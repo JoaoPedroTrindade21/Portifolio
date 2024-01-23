@@ -508,6 +508,18 @@ nav a::after {
         bottom: 0;
     }
 
+
+    nav.active #projeto{
+        background-color: #580000;
+        border: none;
+        padding: 1rem 3rem;
+        border-radius: 0.50rem;
+    }
+
+    nav.active #projeto:hover{
+        opacity: 0.8;
+    }
+
     nav a {
         font-size: 2rem;
         color: white;
